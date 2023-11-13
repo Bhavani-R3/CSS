@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul li:first-child {
+            color: orange;
+            font-weight: bold;
+        }
+        ul li:last-child {
+            color: crimson;
+            font-weight: bold;
+        }
+        section div:first-child {
+            background-color: red;
+        }
+        section div:last-child {
+            background-color: slateblue;
+        }
+        section div:nth-child(3) {
+            background-color: orange;
+        }
+    </style>
+</head>
+<body>
+    <h3> :first-child and last-child </h3>
+    <ul>
+        <li>items 1</li>
+        <li>items 2</li>
+        <li>items 3</li>
+        <li>items 4</li>
+        <li>items 5</li>
+        <li>items 6</li>
+    </ul>
+
+    <section>
+        <div>
+            <p>First div section</p>
+        </div>
+        <div>
+            <p>Second div section</p>
+        </div>
+        <div>
+            <p>Third div section</p>
+        </div>
+        <div>
+            <p>Fourth div section</p>
+        </div>
+    </section>
+</body>
+</html>

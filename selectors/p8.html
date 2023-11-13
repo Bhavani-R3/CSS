@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            padding: 20px;
+            background: slateblue;
+        }
+        /* after div targets first h3 */
+        div + h3 {
+            color: #fff;
+            background-color: gold;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>parent + first element (Adjacent Combinator)</h1>
+
+    <h3>Sample heading</h3>
+
+    <div>
+        <h3>Css title here</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores veritatis quae aliquid reprehenderit ipsum excepturi architecto iusto corrupti velit repellendus rem magni culpa inventore, exercitationem delectus quia facilis nulla dolore.</p>
+        <h3>Another heading</h3> 
+    </div>
+
+    <h3>First sample heading</h3>
+    <h3>second sample heading</h3>
+</body>
+</html>

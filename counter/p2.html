@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            counter-reset: ch;
+        }
+        h2::before {
+            counter-increment: ch;
+            content: counter(ch)".";
+        }
+        h2 {
+            margin-left: 10px;
+            counter-reset: topic;
+        }
+        h4::before {
+            counter-increment: topic;
+            content: counter(ch)"."counter(topic)" ";
+        }
+        h4 {
+            margin-left: 30px;
+            counter-reset: subt;
+        }
+        p::before {
+            counter-increment: subt;
+            content: counter(ch)"."counter(topic)"."counter(subt)" ";
+        }
+        p {
+            margin-left: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Header tags</h2>
+           <h4>Header tags</h4>
+              <p>h1 tag</p>
+              <p>h2 tag</p>
+              <p>h3 tag</p>
+              <p>h4 tag</p>
+            <h4>Format Tags</h4>
+               <p>paragraph tag</p>
+               <p>bold tag</p>
+               <p>underline tag</p>
+            <h4>Table</h4>
+            <h4>List</h4>
+               <p>unorder list</p>
+               <p>order list</p>
+               <p>definition list</p>
+            <h4>Form tags</h4>
+
+        <h2>CSS</h2>
+           <h4>Colors</h4>
+              <p>hex code</p>
+              <p>color name</p>
+              <p>rgb function</p>
+              <p>rgba function</p>
+            <h4>Bachground</h4>
+            <h4>Font</h4>
+               <p>font family</p>
+               <p>font size</p>
+               <p>font weight</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        section {
+            position: absolute;
+            left: 50%;
+            top: 30%;
+            transform: translate(-50%,-50%);
+        }
+        section div {
+            width: 200px;
+            height: 200px;
+            position: absolute;
+        }
+        .b1 {
+            background-color: orange;
+            left: 30px;
+            top: -20px;
+            z-index: 3;
+        }
+        .b2 {
+            background-color: slateblue;
+            left: -50px;
+            top: 100px;
+            z-index: 2;
+        }
+        .b3 {
+            background-color: deeppink;
+            left: 90px;
+            top: 60px;
+            z-index: 1;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div class="b1">Block-1</div>
+        <div class="b2">Block-2</div>
+        <div class="b3">Block-3</div>
+    </section>
+</body>
+</html>
